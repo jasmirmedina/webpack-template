@@ -25,5 +25,6 @@ module.exports = merge(common, {
 
   optimization: {
     minimizer: [new CssMinimizerPlugin()],
+    splitChunks: { chunks: "all" },
   },
 });
