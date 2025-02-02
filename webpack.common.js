@@ -8,7 +8,7 @@ const assetsRules = { test: /\.(png|svg|jpg|jpeg|gif)$/i, type: "asset/resource"
 const fontsRules = { test: /\.(woff|woff2|eot|ttf|otf)$/i, type: 'asset/resource' };
 
 module.exports = {
-  entry: "./src/index.html",
+  entry: "./src/main.js",
 
   output: {
     filename: '[name].js',
