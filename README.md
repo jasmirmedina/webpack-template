@@ -1,2 +1,2 @@
-# My Personal Webpack Template
+# Personal Webpack Template
 Simple but efficient webpack template for personal projects.
