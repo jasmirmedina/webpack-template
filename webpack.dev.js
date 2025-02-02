@@ -11,5 +11,11 @@ module.exports = merge(common, {
     open: true,
     port: 8080,
     compress: true
+  },
+
+  module: {
+    rules: [
+      { test: /\.css$/i, use: ["style-loader", "css-loader"] }
+    ]
   }
 });
