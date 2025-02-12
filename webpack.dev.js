@@ -5,6 +5,10 @@ module.exports = merge(common, {
   mode: "development",
   devtool: "eval-source-map",
 
+  output: {
+    clean: false,
+  },
+
   devServer: {
     watchFiles: ["./src/index.html"],
     client: { overlay: true },
