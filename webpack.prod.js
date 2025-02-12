@@ -21,11 +21,26 @@ module.exports = merge(common, {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
+
+      {
+        test: /\.(?:js|mjs|cjs)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            targets: "defaults",
+            presets: [["@babel/preset-env"]],
+          },
+        },
+      },
     ],
   },
 
   optimization: {
+    minimize: true,
+    splitChunks: { chunks: "all" },
     minimizer: [
+      new CssMinimizerPlugin(),
       new TerserPlugin({
         terserOptions: {
           format: { comments: false },
@@ -33,8 +48,6 @@ module.exports = merge(common, {
         },
         extractComments: false,
       }),
-      new CssMinimizerPlugin(),
     ],
-    splitChunks: { chunks: "all" },
   },
 });

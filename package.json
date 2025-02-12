@@ -20,8 +20,11 @@
   "homepage": "https://github.com/jasmirmedina/webpack-template#readme",
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.26.8",
+    "@babel/preset-env": "^7.26.8",
     "@eslint/js": "^9.19.0",
     "@types/eslint-config-prettier": "^6.11.3",
+    "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.0",
     "eslint": "^9.19.0",
