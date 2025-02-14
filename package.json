@@ -7,18 +7,6 @@
     "dev": "webpack serve --config webpack.dev.js",
     "deploy": "gh-pages -d dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jasmirmedina/webpack-template.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jasmirmedina/webpack-template/issues"
-  },
-  "homepage": "https://github.com/jasmirmedina/webpack-template#readme",
-  "description": "",
   "devDependencies": {
     "@babel/core": "^7.26.8",
     "@babel/preset-env": "^7.26.8",

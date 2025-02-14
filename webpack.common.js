@@ -1,8 +1,9 @@
 const path = require("path");
+
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/main.js",
+  entry: "./src/index.js",
 
   output: {
     filename: "[name].[contenthash].js",
